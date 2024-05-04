@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="4a6af4ea-f614-41d8-b0a9-8bb6d7fe4799"
+      async="async"
+      id="Cookiebot"
+      nonce="pEJWjGXprNRlwDylq29Qnw=="
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a67db6208e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Tscfoundation</title>
+  </head>
+
+  <body>
+    <a id="button"></a>
+
+    <header>
+      <div class="top-nav" id="top-navbar" class="navbar">
+        <div class="topbar">
+          <div class="left">
+            <div
+              class="contact d-flex flex-wrap text-center align-items-center justify-content-center"
+            >
+              <div class="phone">
+                <a href="#">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  +91 9416230390
+                </a>
+              </div>
+              <div class="email">
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i>
+                  thesmileededucationfoundation@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <!-- <a href="#" class="log-btn">Log In</a>
+          <a href="#" class="sign-btn">Signup</a> -->
+            <a href="donate.html"><button>Donate Now</button></a>
+          </div>
+        </div>
+      </div>
+
+      <nav id="second-navbar" class="navbar fixed-top">
+        <div class="navbars me-auto ms-auto d-flex align-items-center">
+          <ul class="sidebar-media">
+            <li onclick="hideSidebar()">
+              <a href="#">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="index.html" class="d-flex gap-3">
+                <img src="image/logo.png" alt="" class="image-fluid" />
+                <h5>The Smile Childern <br />Education Foundation</h5>
+              </a>
+            </li>
+
+            <li  class="hideOnMobile">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="hideOnMobile">
+              <a href="about.html">About</a>
+            </li>
+
+            <li class="hideOnMobile">
+              <a href="donate.html">Donate</a>
+            </li>
+            <li class="hideOnMobile active">
+              <a href="certificate.html">Certificate</a>
+            </li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+
+            <!-- <div class="btns-srh d-flex gap-3">
+            <img src="image/search.png" alt="" style="width: 30px;">
+            <div>
+              <img src="image/bag.png" alt="" style="width: 30px;">
+              <span class="cart-count">02</span>
+            </div>
+          </div> -->
+
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner-section -->
+    <section class="page-title">
+      <div class="page-title-container">
+        <div class="page-title-wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col col-xs-12">
+                <h2>Certificate</h2>
+                <ol class="breadcrumb d-flex align-items-center gap-3">
+                  <li><a href="index.html">Home</a></li>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <li><a href="#">Certificate</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner-section End-->
+
+    <div class="certificate-image pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="model-img">
+              <img class="modal-target" alt="" src="image/Approval.jpg"/>
+              <p>CSR Registration
+              </p>
+            </div>
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+              <span id="modal-close" class="modal-close">&times;</span>
+              <img id="modal-content" class="modal-content" />
+              <div id="modal-caption" class="modal-caption"></div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="model-img">
+              <img class="modal-target" alt="" src="image/form-10.jpg"/>
+              <p>12A Registration</p>
+            </div>
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+              <span id="modal-close" class="modal-close">&times;</span>
+              <img id="modal-content" class="modal-content" />
+              <div id="modal-caption" class="modal-caption"></div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="model-img">
+              <img class="modal-target" alt="" src="image/80g.jpg"/>
+              <p> 80G Registration</p>
+            </div>
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+              <span id="modal-close" class="modal-close">&times;</span>
+              <img id="modal-content" class="modal-content" />
+              <div id="modal-caption" class="modal-caption"></div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="model-img">
+              <img class="modal-target" alt="" src="image/ngo.jpg"/>
+              <p>NGO Darpan</p>
+            </div>
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+              <span id="modal-close" class="modal-close">&times;</span>
+              <img id="modal-content" class="modal-content" />
+              <div id="modal-caption" class="modal-caption"></div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+     <!-- footer -->
+     <footer class="tp-site-footer">
+      <div class="tp-upper-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="widget about-widget">
+                <div class="footer-logo widget-title">
+                  <a href="/"
+                    ><img src="image/logo.png" alt="" />
+                    <h5 class="fs-6">
+                      The Smile Childern Education Foundation
+                    </h5>
+                  </a>
+                </div>
+                <p>
+                  We are a nonprofit fighting poverty, disease, and inequity
+                  around the world.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61550984697658&mibextid=ZbWKwL"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <!-- <li>
+                  <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                </li> -->
+                  <li>
+                    <a href="https://www.instagram.com/tscfoundation4666"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="mailto:thesmileededucationfoundation@gmail.com"
+                      ><i class="fa-brands fa-google-plus"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
+              <div class="widget link-widget">
+                <div class="widget-title">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-lg-offset-1 col-md-6 col-sm-12 col-12">
+              <div class="widget market-widget tp-service-link-widget">
+                <div class="widget-title">
+                  <h3>Contact</h3>
+                </div>
+                <p>If You Want To Join With Us As a Volunteer. Contact Us Today!</p>
+                <div class="contact-ft">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i> Old Bus Stand,
+                      Zakir Colony, Ward No. 03, Near Nazar Nawaj Hospital, Nuh,
+                      Haryana-122107
+                    </li>
+                    <li><i class="fa-solid fa-mobile-screen"></i>9416230390</li>
+                    <li>
+                      <i class="fa-regular fa-envelope"></i
+                      >thesmileededucationfoundation@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="widget instagram">
+                <div class="widget-title">
+                  <h3>Director Message</h3>
+                </div>
+                <video src="image/video.mp4" width="350px" controls></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tp-lower-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col col-xs-12">
+              <p class="copyright">© 2024. All rights reserved  | <a style="text-decoration: none;" href="https://www.instagram.com/web_on_demands?utm_source=qr&igsh=Mzdyemw3ZDl4c3Zy">Web On Demnads</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var btn = $("#button");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass("show");
+        } else {
+          btn.removeClass("show");
+        }
+      });
+
+      btn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+    <script>
+      // Get the navbars
+      const topNavbar = document.getElementById("top-navbar");
+      const secondNavbar = document.getElementById("second-navbar");
+
+      // Set the last known scroll position
+      let lastScrollPos = 0;
+
+      // Listen to scroll events
+      window.addEventListener("scroll", () => {
+        // Get the current scroll position
+        const currentScrollPos =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        // Hide the top navbar when scrolling down
+        if (currentScrollPos > lastScrollPos) {
+          topNavbar.style.top = "100px"; // Hide the top navbar
+        } else {
+          topNavbar.style.top = "0"; // Show the top navbar
+        }
+
+        // Update the last known scroll position
+        lastScrollPos = currentScrollPos;
+
+        // Keep the second navbar fixed at the top
+        if (currentScrollPos > 0) {
+          secondNavbar.classList.add("fixed-top");
+        } else {
+          secondNavbar.classList.remove("fixed-top");
+        }
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar-media");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar-media");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Modal Setup
+      var modal = document.getElementById("modal");
+
+      var modalClose = document.getElementById("modal-close");
+      modalClose.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      // global handler
+      document.addEventListener("click", function (e) {
+        if (e.target.className.indexOf("modal-target") !== -1) {
+          var img = e.target;
+          var modalImg = document.getElementById("modal-content");
+          var captionText = document.getElementById("modal-caption");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt;
+        }
+      });
+    </script>
+  </body>
+</html>
